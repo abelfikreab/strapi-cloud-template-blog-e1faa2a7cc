@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
-  // host: env('HOST', '0.0.0.0'),
-  // port: env.int('PORT', 1337),
-  url: "https://bizzshore-cms.strapiapp.com/",
+  host: env('HOST', '0.0.0.0'),
+  port: env.int('PORT', 1337),
+  // url: "https://necessary-chickens-8462b1fc61.strapiapp.com",
   app: {
     keys: env.array('APP_KEYS'),
   },

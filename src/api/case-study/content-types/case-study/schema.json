@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Case Study"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Short_description": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "enumeration",
+      "enum": [
+        "gained efficiency,",
+        "quality success rate"
+      ]
+    },
+    "Cover_Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
