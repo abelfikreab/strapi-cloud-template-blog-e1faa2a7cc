@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_project_additional_infos",
+  "info": {
+    "displayName": "additional_info"
+  },
+  "options": {},
+  "attributes": {
+    "additional_info_entry": {
+      "type": "component",
+      "component": "project.additional-info-entry",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

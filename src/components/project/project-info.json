@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_project_project_infos",
+  "info": {
+    "displayName": "project_info"
+  },
+  "options": {},
+  "attributes": {
+    "duration": {
+      "type": "string"
+    },
+    "team_size": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "additional_info": {
+      "type": "component",
+      "component": "project.additional-info",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

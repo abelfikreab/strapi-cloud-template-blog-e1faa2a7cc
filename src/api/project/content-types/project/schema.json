@@ -1,0 +1,64 @@
+{
+  "kind": "singleType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tags": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "component",
+      "component": "project.metrics",
+      "repeatable": true
+    },
+    "links": {
+      "type": "component",
+      "component": "project.links",
+      "repeatable": true
+    },
+    "project_info": {
+      "type": "component",
+      "component": "project.project-info",
+      "repeatable": true
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "website_label": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}

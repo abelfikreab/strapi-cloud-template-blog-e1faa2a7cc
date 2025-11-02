@@ -108,6 +108,69 @@ export interface CaseStudyResults extends Struct.ComponentSchema {
   };
 }
 
+export interface ProjectAdditionalInfo extends Struct.ComponentSchema {
+  collectionName: 'components_project_additional_infos';
+  info: {
+    displayName: 'additional_info';
+  };
+  attributes: {
+    additional_info_entry: Schema.Attribute.Component<
+      'project.additional-info-entry',
+      true
+    >;
+  };
+}
+
+export interface ProjectAdditionalInfoEntry extends Struct.ComponentSchema {
+  collectionName: 'components_project_additional_info_entries';
+  info: {
+    displayName: 'additional_info_entry';
+  };
+  attributes: {
+    icon: Schema.Attribute.String;
+    label: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
+export interface ProjectLinks extends Struct.ComponentSchema {
+  collectionName: 'components_project_links';
+  info: {
+    displayName: 'links';
+  };
+  attributes: {
+    href: Schema.Attribute.String;
+    label: Schema.Attribute.String;
+  };
+}
+
+export interface ProjectMetrics extends Struct.ComponentSchema {
+  collectionName: 'components_project_metrics';
+  info: {
+    displayName: 'metrics';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
+export interface ProjectProjectInfo extends Struct.ComponentSchema {
+  collectionName: 'components_project_project_infos';
+  info: {
+    displayName: 'project_info';
+  };
+  attributes: {
+    additional_info: Schema.Attribute.Component<
+      'project.additional-info',
+      true
+    >;
+    duration: Schema.Attribute.String;
+    industry: Schema.Attribute.String;
+    team_size: Schema.Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -182,6 +245,11 @@ declare module '@strapi/strapi' {
       'case-study.project-description': CaseStudyProjectDescription;
       'case-study.project-info': CaseStudyProjectInfo;
       'case-study.results': CaseStudyResults;
+      'project.additional-info': ProjectAdditionalInfo;
+      'project.additional-info-entry': ProjectAdditionalInfoEntry;
+      'project.links': ProjectLinks;
+      'project.metrics': ProjectMetrics;
+      'project.project-info': ProjectProjectInfo;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

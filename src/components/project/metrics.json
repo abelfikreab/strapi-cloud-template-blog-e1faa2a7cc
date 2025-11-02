@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_project_metrics",
+  "info": {
+    "displayName": "metrics"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
