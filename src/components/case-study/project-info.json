@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_case_study_project_infos",
+  "info": {
+    "displayName": "project_info"
+  },
+  "options": {},
+  "attributes": {
+    "duration": {
+      "type": "string"
+    },
+    "team_size": {
+      "type": "string"
+    },
+    "focus": {
+      "type": "string"
+    },
+    "additional_infos": {
+      "type": "component",
+      "component": "case-study.additional-info",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

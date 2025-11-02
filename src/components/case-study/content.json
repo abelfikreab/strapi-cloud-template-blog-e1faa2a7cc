@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_case_study_contents",
+  "info": {
+    "displayName": "content"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

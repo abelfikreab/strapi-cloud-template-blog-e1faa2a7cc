@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_case_study_outcomes",
+  "info": {
+    "displayName": "outcomes"
+  },
+  "options": {},
+  "attributes": {
+    "outcome": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

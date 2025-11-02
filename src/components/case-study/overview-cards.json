@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_case_study_overview_cards",
+  "info": {
+    "displayName": "overview_cards"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

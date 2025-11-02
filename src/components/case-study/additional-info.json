@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_case_study_additional_infos",
+  "info": {
+    "displayName": "additional_info"
+  },
+  "options": {},
+  "attributes": {
+    "additional_info_entry": {
+      "type": "component",
+      "component": "case-study.additional-info-entry",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
