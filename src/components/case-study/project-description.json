@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_case_study_project_descriptions",
+  "info": {
+    "displayName": "project_description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "component",
+      "component": "case-study.content",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

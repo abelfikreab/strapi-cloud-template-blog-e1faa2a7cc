@@ -11,10 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "slug": {
       "type": "string"
     },
-    "Short_description": {
+    "title": {
+      "type": "string"
+    },
+    "short_description": {
       "type": "string"
     },
     "tags": {
@@ -24,7 +27,7 @@
         "quality success rate"
       ]
     },
-    "Cover_Image": {
+    "cover_Image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -33,6 +36,48 @@
         "videos",
         "audios"
       ]
+    },
+    "problem": {
+      "type": "string"
+    },
+    "solution": {
+      "type": "text"
+    },
+    "outcome": {
+      "type": "component",
+      "component": "case-study.outcomes",
+      "repeatable": true
+    },
+    "results": {
+      "type": "component",
+      "component": "case-study.results",
+      "repeatable": true
+    },
+    "project_info": {
+      "type": "component",
+      "component": "case-study.project-info",
+      "repeatable": false
+    },
+    "overview_cards": {
+      "type": "component",
+      "component": "case-study.overview-cards",
+      "repeatable": true
+    },
+    "project_description": {
+      "type": "component",
+      "component": "case-study.project-description",
+      "repeatable": false
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "website_label": {
+      "type": "string"
+    },
+    "galleries": {
+      "type": "component",
+      "component": "case-study.gallery",
+      "repeatable": true
     }
   }
 }

@@ -542,27 +542,44 @@ export interface ApiCaseStudyCaseStudy extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Cover_Image: Schema.Attribute.Media<
+    cover_Image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    galleries: Schema.Attribute.Component<'case-study.gallery', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::case-study.case-study'
     > &
       Schema.Attribute.Private;
+    outcome: Schema.Attribute.Component<'case-study.outcomes', true>;
+    overview_cards: Schema.Attribute.Component<
+      'case-study.overview-cards',
+      true
+    >;
+    problem: Schema.Attribute.String;
+    project_description: Schema.Attribute.Component<
+      'case-study.project-description',
+      false
+    >;
+    project_info: Schema.Attribute.Component<'case-study.project-info', false>;
     publishedAt: Schema.Attribute.DateTime;
-    Short_description: Schema.Attribute.String;
+    results: Schema.Attribute.Component<'case-study.results', true>;
+    short_description: Schema.Attribute.String;
+    slug: Schema.Attribute.String;
+    solution: Schema.Attribute.Text;
     tags: Schema.Attribute.Enumeration<
       ['gained efficiency,', 'quality success rate']
     >;
-    Title: Schema.Attribute.String;
+    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    website_label: Schema.Attribute.String;
+    website_url: Schema.Attribute.String;
   };
 }
 
